@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T24085's GitHub Projects Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        header ul li a:hover {
+            color: #74ebd5;
+        }
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 60px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #f0f0f0;
+        }
+        /* Project List */
+        .project-list {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+        .project {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .project::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #ff6f61, #ffb88c);
+            transition: height 0.3s;
+        }
+        .project:hover::before {
+            height: 10px;
+        }
+        .project h3 {
+            font-size: 1.5rem;
+            color: #ff6f61;
+            margin: 10px 0;
+        }
+        .project p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        .project .links a {
+            display: inline-block;
+            margin: 5px 10px;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .project .links a:hover {
+            color: #ff6f61;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            margin-top: 40px;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            header nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .hero h2 {
+                font-size: 2rem;
+            }
+            .project-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>T24085's Projects</h1>
+            <ul>
+                <li><a href="https://github.com/T24085" target="_blank">GitHub</a></li>
+                <li><a href="#contact" onclick="alert('Contact me via GitHub!')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to My GitHub Hub</h2>
+        <p>Explore my collection of HTML apps built with creativity and passion. Click below to check out my projects!</p>
+    </section>
+
+    <!-- Project List -->
+    <div class="project-list">
+        <div class="project">
+            <h3>TotalPayRate</h3>
+            <p>A tool to calculate total pay rates with ease.</p>
+            <div class="links">
+                <a href="https://t24085.github.io/TotalPayRate/" target="_blank">View Live</a>
+                <a href="https://github.com/T24085/TotalPayRate" target="_blank">Source Code</a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Random Generator</h3>
+            <p>Generate random numbers or items for fun or utility.</p>
+            <div class="links">
+                <a href="https://t24085.github.io/random_generator/" target="_blank">View Live</a>
+                <a href="https://github.com/T24085/random_generator" target="_blank">Source Code</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 T24085. Built with 💻 and ☕.</p>
+    </footer>
+</body>
+</html>
